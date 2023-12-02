@@ -1,0 +1,10 @@
+body{
+    padding: 16px 24px; //* padding : top , rigth , bottom , left
+    background-color: $black;
+    display: flex;
+    flex-wrap: wrap;//*acomoda los item para que no se salgan de la pantalla. ya es RESPOSIVO
+    min-height: 100vh;//* para que los item no se salagan del contenedor, que este crezca cuando sea necesario
+    height: auto;
+    justify-content: space-around;// * ubica un item en el espacio horizontal eje X
+    //* align-items: center;//* ubica un item en el espacio vertical eje Y
+}

@@ -1,0 +1,35 @@
+//*pantallas celulares
+$screen-sm:766px;
+//*pantallas tablets
+$screen-md:1023px;
+//*pantallas escritorio
+$screen-lg:1024px;
+
+//*mixin para Small devices
+@mixin sm{
+    @media only screen and  (max-width: $screen-sm){
+        @content;
+    }
+}
+
+//*mixin para Tablets
+@mixin md{
+    @media only screen and (min-width: $screen-md) and (max-width: $screen-md){
+        @content;
+    }
+}
+//*mixin para Tablets
+@mixin lg{
+    @media only screen and (min-width: $screen-lg) { 
+        @content;    
+    }
+}
+
+//* Mixin para Display-flex
+@mixin flex($direction, $wrap, $justify, $align, $space:0){
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $space;
+}
